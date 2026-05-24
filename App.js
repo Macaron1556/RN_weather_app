@@ -4,17 +4,12 @@ import React, {useState} from 'react';
 
 
 export default function App() {
-    const [number, setNumber] = useState(0);
-    
   return (
-    <View style={styles.container}>
-      <Text style={{...styles.text, color: "blue"}}>리액트 네이티브</Text>
-      <Text style={{fontSize: 100}}>결과 : {number}</Text>
-      <View style={styles.btnGroup}>
-        <Button style = {styles.btn} title="증가" onPress={() => setNumber(number + 1)}/>
-        <Button style = {styles.btn} title="감소" onPress={() => setNumber(number - 1)}/>
-      </View>
-      <StatusBar backgroundColor="red" barStyle="light-content" hidden={false}/>
+    <View style={{flex : 1}}>
+        <View style={{flex: 1, backgroundColor: "red"}}></View>
+        <View style={{flex: 2, backgroundColor: "darkorange"}}></View>
+        <View style={{flex: 2.5, backgroundColor: "green"}}></View>
+        <StatusBar style="auto" />
     </View>
   );
 }
