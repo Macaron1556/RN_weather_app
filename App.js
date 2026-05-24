@@ -14,7 +14,7 @@ export default function App() {
         <Button title="증가" onPress={() => setNumber(number + 1)}/>
         <Button title="감소" onPress={() => setNumber(number - 1)}/>
       </View>
-      <StatusBar style="auto" />
+      <StatusBar backgroundColor="red" barStyle="light-content" hidden={false}/>
     </View>
   );
 }
